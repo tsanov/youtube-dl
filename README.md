@@ -8,7 +8,7 @@ introduces only a Dockerfile to containerize this fantastic piece of software.
 Clone the repo:
 
 ```
-git clone 
+git clone https://github.com/tsanov/youtube-dl.git
 ```
 
 Get into the root of the cloned repo:
@@ -29,7 +29,7 @@ Run a container, e.g. ephemeral like this:
 $ docker run -it --rm -v ~/Downloads/:/home/youtube-dl/Downloads/ youtube-dl
 ```
 
-`/home/youtube-dl/Downloads/` mirrors whatever your '`~/Downloads` is, so
+`/home/youtube-dl/Downloads/` shares whatever your '`~/Downloads` is, so
 anything downloaded in there will be actually stored on the hypervisor.
 
 # COPYRIGHT
